@@ -1,0 +1,157 @@
+
+\documentclass[10pt,twoside,twocolumn,notitle,a4paper]{IEEEtran}
+
+% Useful Basics
+ \usepackage{color}
+\usepackage{xcolor}
+\usepackage{framed}
+
+%imports for language
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+
+% Import for Headers and Footers
+\usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
+\usepackage{fancyhdr}
+
+%% Import for referencing
+\usepackage[round]{natbib}
+
+% Write Annotation
+\newenvironment{notation}{%
+   \def\FrameCommand{\colorbox{yellow!20}}%
+   \MakeFramed{\advance\hsize-\width \FrameRestore}}
+ {\endMakeFramed}
+ 
+ % Write Question
+ \newenvironment{question}{%
+   \def\FrameCommand{\colorbox{red!20}}%
+   \MakeFramed{\advance\hsize-\width \FrameRestore}}
+ {\endMakeFramed}
+ 
+ % Write Answer
+ \newenvironment{answer}{%
+   \def\FrameCommand{\colorbox{green!20}}%
+   \MakeFramed{\advance\hsize-\width \FrameRestore}}
+ {\endMakeFramed}
+ 
+ % No new page section
+
+% MAKE ALL LETTTERS UPPERCASE
+\newcommand\textlcsc[1]{\textsc{\MakeLowercase{#1}}}
+
+%% TITLE, CHANGE IT HERE
+
+\newcommand{\TITLES}{Valve}
+
+
+\makeatletter
+
+\title{\TITLES  \\
+	\large Some more in detail information, \\
+	maybe with a new line} 
+	\author{Marlin Arnz, Filippo Boiani, Jin Hu, Laura Segerström, Marvin Söhlke}
+\date{ Technische Universität Berlin \\ January 2017}
+
+\makeatother
+
+
+
+\pagestyle{fancy}
+\fancyhead{} % cancella tutti i campi
+\fancyhead[RO,LE]{ \textbf{ \textlcsc{ \TITLES } } }
+\fancyhead[RE, LO]{\thepage}
+\fancyfoot{}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\thispagestyle{fancy}
+
+\begin{question}
+Do we have to follow the suggested pdf?
+\end{question}
+\begin{answer}
+No.
+\end{answer}
+
+
+\begin{notation}
+
+\paragraph{CheckList:}
+\begin{enumerate}
+\item Formality over the rest
+\item Write all the acronym used the very first time they are introduced
+\item No crossing paragraph (I think she was referring to the fluency between paragraphs)
+\item ...
+\item Read twice before submitting
+\end{enumerate}
+
+\paragraph{Objective:}
+\begin{enumerate}
+\item Create Distance, Watching the case from the top
+\item Do not use personal pronouns (in case use passive language) (except if it is result of your studies)
+\item Referencing Correctly (in the test, Harvard style) (check APA Formatting base)
+/item Be Simple, Clear and Concise
+\end{enumerate}
+
+\end{notation}
+
+\begin{question}
+Running head???
+\end{question}
+
+\begin{notation}
+	APA suggests that titles be no longer than 12 words. Don’t use any abbreviations in the title and use upper and lowercase letters.
+	\end{notation}
+
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien nulla, ultrices quis malesuada vel, condimentum nec turpis. Integer urna orci, tempus pretium varius ac, mollis pulvinar risus. Nunc sagittis sit amet arcu id rutrum. Vivamus condimentum mauris vitae vehicula bibendum. Proin viverra nibh diam, eu luctus libero cursus quis. Integer porta quam in metus scelerisque placerat. Maecenas pretium, massa et varius laoreet, velit odio elementum elit, ut suscipit lectus nunc eget mauris. Suspendisse fermentum mollis purus, nec hendrerit dolor aliquet porttitor.
+\begin{notation}
+Abstract should be: 150-250 words
+\end{notation}
+
+\begin{center}
+\textit{Keywords:} One, Two, Three
+\end{center}
+
+\end{abstract}
+
+
+
+\newpage
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nibh sapien. Integer facilisis, orci a consectetur iaculis, nunc mauris sagittis massa, in varius felis nisl nec turpis. Nam sed suscipit ipsum. Etiam aliquet iaculis lobortis. Sed elementum venenatis semper. Quisque ac metus quis tellus porttitor aliquam. Etiam porttitor, nunc a lacinia pulvinar, odio sem fermentum nisl, ut consectetur metus eros eu orci. Praesent quis erat quis quam efficitur ultrices dapibus quis lacus. Proin vitae nunc ex.
+
+Nullam sed neque sed nunc porta euismod eu in est. Sed ut ante condimentum, ultricies ipsum at, tempus est. Integer lacinia tincidunt metus, facilisis tempor tortor egestas vitae. Cras rutrum dui augue, non tincidunt neque dictum dictum. Morbi quis maximus dui. Sed accumsan odio vel rutrum pharetra. Pellentesque iaculis a metus ac lacinia. Aliquam pretium tincidunt tortor, at hendrerit enim rutrum quis. Ut id erat eget odio sagittis pharetra. Phasellus at est est. In egestas ultricies eros id posuere. Suspendisse ut viverra mi, non rutrum ex. Praesent fermentum bibendum elit, laoreet pulvinar magna semper quis. Aliquam ac nulla sit amet sapien pretium viverra et pretium ligula.
+
+Mauris id dapibus libero. Pellentesque vel dictum velit, vel luctus lorem. In hac habitasse platea dictumst. Pellentesque aliquam est facilisis malesuada feugiat. Aenean sed gravida magna, in vestibulum sapien. Donec rutrum mi vitae nisl gravida, at semper ex tempor. Sed mattis nulla id ultricies rhoncus. Fusce et lacus cursus, luctus nulla vitae, lacinia lacus. Quisque id enim quam. Nulla placerat bibendum malesuada. Fusce ultricies hendrerit imperdiet. Donec quis sapien vel odio dictum dapibus volutpat finibus ipsum. Praesent dignissim urna in est condimentum faucibus. Maecenas vitae mollis risus, id scelerisque lacus. Sed sit amet facilisis est.
+
+\begin{notation}
+Here is the citation, wait for it....
+\end{notation}
+
+Aliquam erat volutpat. Donec ac enim justo. Aenean tristique \citep{knuthwebsite} leo sit amet velit suscipit, at imperdiet dui dignissim. Fusce ac odio nulla. Phasellus imperdiet orci justo, ac feugiat lorem commodo sed. Maecenas congue eget nunc a placerat. Phasellus gravida lacus ac varius posuere. Sed auctor, est sed sagittis maximus, dui est sagittis nibh, vel viverra nisl ligula vitae orci. Etiam et hendrerit quam. Etiam in odio sit amet nunc posuere ultrices nec hendrerit mauris. Nunc tincidunt ultricies sem, ut condimentum elit lobortis non.
+
+Morbi feugiat tortor a lacus pulvinar lacinia. Proin ante magna, interdum nec scelerisque vel, tempor vitae metus. Nullam eget porttitor turpis. Nunc maximus non magna non ullamcorper. Duis consequat tortor elit, vitae luctus nunc rhoncus eu. Nulla porta pulvinar iaculis. Vestibulum eget aliquet metus. Praesent id augue lobortis, sollicitudin lacus at, gravida nibh. Pellentesque sed commodo nisi, eu feugiat elit.
+
+
+\section{Conclusion}
+
+\begin{notation}
+Is it \textit{"Conclusion"}?
+\end{notation}
+Morbi feugiat tortor a lacus pulvinar lacinia. Proin ante magna, interdum nec scelerisque vel, tempor vitae metus. Nullam eget porttitor turpis. Nunc maximus non magna non ullamcorper. Duis \citep{einstein} consequat tortor elit, vitae luctus nunc rhoncus eu. Nulla porta pulvinar iaculis. Vestibulum eget aliquet metus. Praesent id augue lobortis, sollicitudin lacus at, gravida nibh. Pellentesque sed commodo nisi, eu feugiat elit.
+
+
+\bibliographystyle{agsm}
+\bibliography{bibliography}
+
+\end{document}
