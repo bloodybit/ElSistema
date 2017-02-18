@@ -1,0 +1,110 @@
+\message{ !name(article.tex)}
+\documentclass[10pt,twoside,notitle,a4paper]{article}
+
+% Useful Basics
+\usepackage{color} \usepackage{xcolor} \usepackage{framed}
+
+% imports for language
+\usepackage[utf8]{inputenc} \usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc} \usepackage[english]{babel}
+
+
+% Import for Headers and Footers
+\usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
+\usepackage{fancyhdr}
+
+%% Import for referencing
+\usepackage[round]{natbib}
+
+% Write Annotation
+\newenvironment{notation}{%
+  \def\FrameCommand{\colorbox{yellow!20}}%
+  \MakeFramed{\advance\hsize-\width \FrameRestore}} {\endMakeFramed}
+ 
+% Write Question
+\newenvironment{question}{%
+  \def\FrameCommand{\colorbox{red!20}}%
+  \MakeFramed{\advance\hsize-\width \FrameRestore}} {\endMakeFramed}
+ 
+% Write Answer
+\newenvironment{answer}{%
+  \def\FrameCommand{\colorbox{green!20}}%
+  \MakeFramed{\advance\hsize-\width \FrameRestore}} {\endMakeFramed}
+ 
+% No new page section
+
+% MAKE ALL LETTTERS UPPERCASE
+\newcommand\textlcsc[1]{\textsc{\MakeLowercase{#1}}}
+
+%% TITLE, CHANGE IT HERE
+
+\newcommand{\TITLES}{Valve}
+
+
+\makeatletter
+
+\title{\TITLES  \\
+  \large Some more in detail information, \\
+  maybe with a new line} \author{Marlin Arnz, Filippo Boiani, Jin Hu,
+  Laura Segerström, Marvin Söhlke} \date{ Technische Universität
+  Berlin \\ January 2017}
+
+\makeatother
+
+
+
+\pagestyle{fancy} \fancyhead{} % cancella tutti i campi
+\fancyhead[RO,LE]{ \textbf{ \textlcsc{ \TITLES } } } \fancyhead[RE,
+LO]{\thepage} \fancyfoot{}
+
+
+
+\begin{document}
+
+\message{ !name(article.tex) !offset(23) }
+\paragraph{Objective:}
+\begin{enumerate}
+
+\item Do not use personal pronouns (in case use passive language)
+  (except if it is result of your studies)
+\item Referencing Correctly (in the test, Harvard style) (check APA
+  Formatting base) /item Be Simple, Clear and Concise
+\end{enumerate}
+
+\end{notation}
+
+\begin{question}
+  Running head???
+\end{question}
+
+\begin{notation}
+  APA suggests that titles be no longer than 12 words. Don’t use any
+  abbreviations in the title and use upper and lowercase letters.
+\end{notation}
+
+\begin{abstract}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+  sapien nulla, ultrices quis malesuada vel, condimentum nec
+  turpis. Integer urna orci, tempus pretium varius ac, mollis pulvinar
+  risus. Nunc sagittis sit amet arcu id rutrum. Vivamus condimentum
+  mauris vitae vehicula bibendum. Proin viverra nibh diam, eu luctus
+  libero cursus quis. Integer porta quam in metus scelerisque
+  placerat. Maecenas pretium, massa et varius laoreet, velit odio
+  elementum elit, ut suscipit lectus nunc eget mauris. Suspendisse
+  fermentum mollis purus, nec hendrerit dolor aliquet porttitor.
+  \begin{notation}
+    Abstract should be: 150-250 words
+  \end{notation}
+
+\begin{center}
+  \textit{Keywords:} One, Two, Three
+\end{center}
+
+\end{abstract}
+
+
+
+\newpage
+\message{ !name(article.tex) !offset(48) }
+
+\end{document}

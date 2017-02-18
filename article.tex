@@ -1,5 +1,5 @@
 
-\documentclass[10pt,twoside,twocolumn,notitle,a4paper]{IEEEtran}
+\documentclass[12pt,twoside,notitle,a4paper]{article}
 
 % Useful Basics
  \usepackage{color}
@@ -17,8 +17,20 @@
 \usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
 \usepackage{fancyhdr}
 
+% line spacing
+%\renewcommand{\baselinestretch}{1} 
+
 %% Import for referencing
 \usepackage[round]{natbib}
+
+% set Line spacing
+\renewcommand{\baselinestretch}{1.1} 
+\usepackage{url}
+%% import for quoting
+\usepackage{csquotes}
+
+ % bar text
+ \usepackage{soul} %with command st{}
 
 % Write Annotation
 \newenvironment{notation}{%
@@ -53,7 +65,7 @@
 \title{\TITLES  \\
 	\large Some more in detail information, \\
 	maybe with a new line} 
-	\author{Marlin Arnz, Filippo Boiani, Jin Hu, Laura Segerström, Marvin Söhlke}
+	\author{Marlin Arnz (350476), Filippo Boiani (387680), Jin Hu (387514), Laura Becedas Segerström (385905), Riccardo Sibani (382708), Marvin Söhlke}
 \date{ Technische Universität Berlin \\ January 2017}
 
 \makeatother
@@ -75,48 +87,36 @@
 
 \thispagestyle{fancy}
 
-\begin{question}
-Do we have to follow the suggested pdf?
-\end{question}
-\begin{answer}
-No.
-\end{answer}
-
-
 \begin{notation}
 
 \paragraph{CheckList:}
 \begin{enumerate}
-\item Formality over the rest
+\item \st{Formality over the rest}
 \item Write all the acronym used the very first time they are introduced
-\item No crossing paragraph (I think she was referring to the fluency between paragraphs)
-\item ...
+\item \st{No crossing paragraph (I think she was referring to the fluency between paragraphs)}
 \item Read twice before submitting
 \end{enumerate}
 
 \paragraph{Objective:}
 \begin{enumerate}
-\item Create Distance, Watching the case from the top
-\item Do not use personal pronouns (in case use passive language) (except if it is result of your studies)
-\item Referencing Correctly (in the test, Harvard style) (check APA Formatting base)
-/item Be Simple, Clear and Concise
+\item \st{Create Distance, Watching the case from the top}
+\item \st{Do not use personal pronouns (in case use passive language) (except if it is result of your studies)}
+\item \st{Referencing Correctly (in the test, Harvard style) (check APA Formatting base)}
+\item \st{Be Simple, Clear and Concise}
 \end{enumerate}
 
 \end{notation}
 
-\begin{question}
-Running head???
-\end{question}
 
 \begin{notation}
 	APA suggests that titles be no longer than 12 words. Don’t use any abbreviations in the title and use upper and lowercase letters.
 	\end{notation}
 
 \begin{abstract}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien nulla, ultrices quis malesuada vel, condimentum nec turpis. Integer urna orci, tempus pretium varius ac, mollis pulvinar risus. Nunc sagittis sit amet arcu id rutrum. Vivamus condimentum mauris vitae vehicula bibendum. Proin viverra nibh diam, eu luctus libero cursus quis. Integer porta quam in metus scelerisque placerat. Maecenas pretium, massa et varius laoreet, velit odio elementum elit, ut suscipit lectus nunc eget mauris. Suspendisse fermentum mollis purus, nec hendrerit dolor aliquet porttitor.
-\begin{notation}
-Abstract should be: 150-250 words
-\end{notation}
+This paper undertakes an analytical discussion about the organizational structure of Valve, a software game company, and the issues related to its entrance into the hardware market. The report analyses the underlying factors to Valve's success based on the working environment and how the creativity and team cooperation are supported. 
+
+A brief study about entering new markets and niches is presented. 
+After focusing on the different benefits and risks between the hardware and software methodologies, suggestions inspired by Wikispeed case are provided for the decision of Valve to enter a new market.
 
 \begin{center}
 \textit{Keywords:} One, Two, Three
@@ -126,30 +126,79 @@ Abstract should be: 150-250 words
 
 
 
+
 \newpage
 \section{Introduction}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nibh sapien. Integer facilisis, orci a consectetur iaculis, nunc mauris sagittis massa, in varius felis nisl nec turpis. Nam sed suscipit ipsum. Etiam aliquet iaculis lobortis. Sed elementum venenatis semper. Quisque ac metus quis tellus porttitor aliquam. Etiam porttitor, nunc a lacinia pulvinar, odio sem fermentum nisl, ut consectetur metus eros eu orci. Praesent quis erat quis quam efficitur ultrices dapibus quis lacus. Proin vitae nunc ex.
+\subsection{What do Valve do?}
+\paragraph{}Valve is an entertainment software and technology company that was founded in 1996 by Gabe Newell and Mike Harrington (\url{http://www.valvesoftware.com}). The company has not only created many award winning games but also the software distribution platform Steam. The platform distributes thousand of games to more than 65 million players around the world.
 
-Nullam sed neque sed nunc porta euismod eu in est. Sed ut ante condimentum, ultricies ipsum at, tempus est. Integer lacinia tincidunt metus, facilisis tempor tortor egestas vitae. Cras rutrum dui augue, non tincidunt neque dictum dictum. Morbi quis maximus dui. Sed accumsan odio vel rutrum pharetra. Pellentesque iaculis a metus ac lacinia. Aliquam pretium tincidunt tortor, at hendrerit enim rutrum quis. Ut id erat eget odio sagittis pharetra. Phasellus at est est. In egestas ultricies eros id posuere. Suspendisse ut viverra mi, non rutrum ex. Praesent fermentum bibendum elit, laoreet pulvinar magna semper quis. Aliquam ac nulla sit amet sapien pretium viverra et pretium ligula.
+\subsection{How does the structure look like?}
+\paragraph{}The company is divided in so called \textit{cabals}, which can be described as multidisciplinary project teams that work to get a product or large feature shipped. The organization uses open allocation, the employees themselves move between cabals they choose to work in. Employees can decide freely the cabal they want, if they believe that the work there is important enough for them to choose it. 
 
-Mauris id dapibus libero. Pellentesque vel dictum velit, vel luctus lorem. In hac habitasse platea dictumst. Pellentesque aliquam est facilisis malesuada feugiat. Aenean sed gravida magna, in vestibulum sapien. Donec rutrum mi vitae nisl gravida, at semper ex tempor. Sed mattis nulla id ultricies rhoncus. Fusce et lacus cursus, luctus nulla vitae, lacinia lacus. Quisque id enim quam. Nulla placerat bibendum malesuada. Fusce ultricies hendrerit imperdiet. Donec quis sapien vel odio dictum dapibus volutpat finibus ipsum. Praesent dignissim urna in est condimentum faucibus. Maecenas vitae mollis risus, id scelerisque lacus. Sed sit amet facilisis est.
+\subsection{Who “runs” the company?}
+\paragraph{}Valve is a flat organisation, the organisation has no levels between staff and executives. This “boss-free” company believes that when employees get to be directly involved in the decision making process the results will be more efficient. Therefore, recruiting top talented people is Valve’s biggest challenge. Valve has created a handbook for new employees to make it easy for them to understand how Valve is organized and what to expect the time working there. 
+\subsection{Work environment}
+\paragraph{}Valve corporation makes sure  that every employee feels free to choose which project they like to work on. By giving them this freedom they create a high-quality relationship between the company and the employees which results in the employees giving back loyalty, commitment and creativity according to the Leader-member exchange theory (Graen, 1976; Graen, Novak, \& Som- merkamp, 1982; Graen \& Uhl-Bien, 1995).  
+This freedom makes the employees confident with their job and team members, creating a bond of trust between them. Valve do not only give them the freedom to choose, they also encourage them to take risks. 
 
-\begin{notation}
-Here is the citation, wait for it....
-\end{notation}
+\blockquote{ \textit{\\Providing the freedom to fail is an important trait of the company - we couldn’t expect so much of individuals if we also penalized people for errors\\}}
 
-Aliquam erat volutpat. Donec ac enim justo. Aenean tristique \citep{knuthwebsite} leo sit amet velit suscipit, at imperdiet dui dignissim. Fusce ac odio nulla. Phasellus imperdiet orci justo, ac feugiat lorem commodo sed. Maecenas congue eget nunc a placerat. Phasellus gravida lacus ac varius posuere. Sed auctor, est sed sagittis maximus, dui est sagittis nibh, vel viverra nisl ligula vitae orci. Etiam et hendrerit quam. Etiam in odio sit amet nunc posuere ultrices nec hendrerit mauris. Nunc tincidunt ultricies sem, ut condimentum elit lobortis non.
 
-Morbi feugiat tortor a lacus pulvinar lacinia. Proin ante magna, interdum nec scelerisque vel, tempor vitae metus. Nullam eget porttitor turpis. Nunc maximus non magna non ullamcorper. Duis consequat tortor elit, vitae luctus nunc rhoncus eu. Nulla porta pulvinar iaculis. Vestibulum eget aliquet metus. Praesent id augue lobortis, sollicitudin lacus at, gravida nibh. Pellentesque sed commodo nisi, eu feugiat elit.
+\section{Hiring Process}
+\paragraph{}The process of hiring is a long-term decision to understand whether the candidate is the right individual. Fist, each candidate is checked upon its \emph{domain relevant skills}. The ideal one is indeed highly skilled in a broad set of different valuable things and is among the bests within a particular discipline. This so-called “T-Shaped” characteristic \cite{handbook} (wide competences and high specialisation) is essential to create value, be considered a peer inside the company and, according to Valve’s handbook, to ideally be capable to run the company \cite{handbook}.
+
+\paragraph{}This domain relevant skills have to be combined with creativity relevant ones. Therefore, the job interviews are also focused on characteristics like the ability to work in teams; the degree of collaboration; their ability to deconstruct problems on the fly and talk to others as they do so. In addition, the perfect candidate should be simultaneously inventive, iterative, talkative and reactive. Knowledge and skills in software development are important factors in a potential employee profile, but they provide the foundation of creative action rather than encouraging it \citep*{unsworth2010employees}.
+
+\section{Team Working}
+\subsection{Work motivation}
+\paragraph{}For Valve, maintaining the work motivation of the employees is the second most important factor for the success and the revenue of the company. On the one hand, it enhances the staff commitment to the job: every individual working at Valve is an important success factor, not simply replaceable. On the other hand, the creative process at Valve is also affected by several key factors including  work motivation, creativity requirements, cultural support for creativity, time resources and autonomy \citep*{unsworth2010employees}.
+\paragraph{}Valve embodies those key factors perfectly incentivising the employees to develop innovations: in a flexible environment and excluding hierarchy. The firm structure’s main target is to support creative actions. Thus, the organizational culture increase the employees’ perception that their contribution shall be recognized. 
+
+ \subsection{Workgroup dynamics}
+\paragraph{}Encouraged by mobile workstations (desks on rolls which can be positioned everywhere), employees have the freedom to work with whom and on what project they want based on their personal interests. In this sense, task motivation is merely intrinsic: the employee can leave the workgroup at any time to join other projects as soon as the previous one is not anymore of further interest. This working environment together with the Agile software development process are deeply embedded in Valves organizational structure. In addition, employees are rewarded for their contributions and incentivised to be part of successful projects. Projects perceived as risky may not be able to attract talent and thus may not be adequately staffed. Therefore, team size and composition are never stable, but constantly subject to changes; the fluxes of employees reflect which projects are believed to be more compelling. As a result each team results heterogeneous because the employees first check which skills are needed by the group they intend to join and decide whether they are able to add value. This heterogeneity does not lead to coordination problems or free riding behaviours since all members have aligned interests in the group success and in the achievement of the goals. 
+\paragraph{}Besides joining interesting projects, the employees are free to start their own projects. Freedom is an expression of trust, which is pervasive within the corporation. According to Michael Abrash \citep*{valveBlog}, a Valve employee since 2011, all of Valve’s source code is available to anyone and anyone inside the company can sync up and modify it. Any employee can know almost anything about how the company works and what it is doing; the company is transparent to its employees and it does not build administrative barriers. It just trusts them and gets out of their way so they can easily create value. Those innovative workgroup dynamics, the cultural support and time resources do not make the single job look like a mandatory task, but simulate it by challenging the employee and, in return, increasing the work motivation.
+
+\section{Entry new Niches}
+
+\paragraph{}After attained big success in game software, Valve evaluated about entering the hardware industry considering the limitations of open architectures. Valve had no control over the hardware where their games were running on. For a company, a lot of discussions are needed  to make the decision whether to enter a new market. 
+ \paragraph{}According to the article from \citep*{king2002incumbent}, factors which influence a company’s decision to enter a new market depends on the production and sales experience, transformation experience and organization changes. The extent of these influential factors depends on a company’s dynamic capabilities. 
+\paragraph{}Considered Valve's successful experience in game developing and selling, they may have more confidence to enter the new market. Besides, the emerging trends in PC Gaming regards new peripheral inputs (e.g. hardware controllers)that provide an improved game experience. 
+\paragraph{}According to \citep*{debruyne2005competitor}, incumbents are easy to be affected by competitors. As a medium-size but top-level game software company, Valve is supposed to enter and share the hardware market. If Valve's competitors entry the hardware market, maybe it's time for Valve to get into it, in order to exploit opportunities and make better products, attract more customers and increase the profits. 
+\paragraph{}Entering hardware industry may present some issues. In fact, moving from the comfort zone of software design could disclose some lacks in hardware development knowledge.
+\paragraph{}Though they have excellent software developing mode which is in good tempo with their hiring policy and enterprise culture, the hardware developing process may differ from what they used before. 
+
+\paragraph{}If Valve wants to enter in new niches or markets, their organisational process must be rethinked. According to \citep*{king2002incumbent}, organization changes may decrease the probability of a company to enter a new market. 
+Can Valve keep their organisational process, that lead them to their current success, and still enter the hardware industry? 
+Is it possible for Valve to keep their high creativity standards and, at the same time, penetrate the new market with innovative products?
+
+
+\section{Transition to Hardware}
+\paragraph{}Hardware is usually developed with waterfall models \citep*{boehm1988spiral}, where several months can be spent studying requirements and design processes before starting the product’s building process.
+Waterfall models do not aim to slow down the process, rather they try to plan in advance in order to avoid problems during the implementation and verification processes.
+\paragraph{}In software, the designing part is usually sacrificed in favour of developing stage (e.g. new working organisational process such as Lean UX \citep*{liikkanen2014lean} and \citep*{may2012applyi}): 
+a very well known and bad habit in software development where it is easy to recover bugs and errors once the product is already on the market, the problem is to figure out the lacks in advance.
+\paragraph{}Developers can make modifications and updates after releasing the product according to the feedback received. Employees at Valve got used to this routine \citep*{valveScrum}, unfortunately hardware development needs longer time and all the issues have to be fixed before shipping the product. Once the product is out there making changes can be critical.
+\paragraph{}Therefore, there is an asynchronously between the classic approach to the hardware and the one Valve is used to, in matter of software.
+\paragraph{}The Wikispeed Team suggests a possible solution to this case \citep*{Wikispeed} and \citep*{denning2012agile}. Briefly, the founder, Mr Justice, embraced the SCRUM methodologies in order to develop a new car by modules.
+
+
+“Modularity according to Joe decreased the cost of changes by adopting multiple short iterative cycles rather than one long development process.”
+
+\paragraph{}This model over the years has been embraced by big corporations and companies: in 2003 \citep*{Wikispeed}. Boing was used to SCRUM methodology and when they integrated it with the Wikispeed techniques, the management reported a 2.4x improvement as a result. They were able to develop a prototype to the customer in just 5 days.
+\paragraph{}This methodology works for small teams, exactly what Valve is used to. 
+Engineers at Valve faced difficulties in scaling with hardware, but with the process implemented by Wikispeed  is possible to keep the development organised into cabals (one of Valve’s peculiarities), avoiding all the risks of externalisation.
 
 
 \section{Conclusion}
 
-\begin{notation}
-Is it \textit{"Conclusion"}?
-\end{notation}
-Morbi feugiat tortor a lacus pulvinar lacinia. Proin ante magna, interdum nec scelerisque vel, tempor vitae metus. Nullam eget porttitor turpis. Nunc maximus non magna non ullamcorper. Duis \citep{einstein} consequat tortor elit, vitae luctus nunc rhoncus eu. Nulla porta pulvinar iaculis. Vestibulum eget aliquet metus. Praesent id augue lobortis, sollicitudin lacus at, gravida nibh. Pellentesque sed commodo nisi, eu feugiat elit.
+Entering the hardware market can be an opportunity for Valve to extend and attract even more customers.
+As discussed, changes are always a high level risk decision for companies.
+Creativity and cognitive innovative behaviour are focal points in Valve’s culture, which must be maintained in the transition from a software company to a multi complex company with hardware and software.
+By combining  the problems related to the rigidity of the hardware developing process and the creativity needs expressed by the company, a step into a new market is possible following the Wikispeed model introduced in the last part of the document.
+The recruiting process and the team working environment can be kept assuring a consistency in the organisational structure and maintaining the innovational success.
 
+
+\newpage
 
 \bibliographystyle{agsm}
 \bibliography{bibliography}
